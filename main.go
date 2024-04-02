@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
 	"os"
-	// "path/filepath"
 	"runtime"
 )
 
@@ -25,7 +23,6 @@ func init() {
 
 func main() {
 	content := OpenTextEditor()
-	fmt.Println(content)
 	result := ConvertValuesToBase64(content)
 	PrintResult(result)
 }
